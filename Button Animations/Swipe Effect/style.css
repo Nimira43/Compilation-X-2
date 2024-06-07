@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: darkred;
+}
+
+a {
+    text-decoration: none;
+    color: gold;
+    font-family: 'Raleway', sans-serif;
+    font-size: 40px;
+    border: 3px solid gold;
+    padding: 40px 80px;
+    position: relative;
+    transition: all 1s;
+    overflow: hidden;
+}
+
+a:before {
+    content: 'Hello You!!!';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    transform: translateY(-100%);
+    transition: all 1s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+a:hover:before {
+    transform: translateY(0);
+}

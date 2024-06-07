@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+a {
+    text-decoration: none;
+    color: gold;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 40px;
+    border: 3px solid gold;
+    padding: 40px 80px;
+    transition: all 0.3s;
+    position: relative;
+    overflow: hidden;
+}
+
+a:hover {
+    background-color: orangered;
+}
+
+a:before {
+    content: '';
+    background-color: gold;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    transform: translateX(-100%) rotate(45deg);
+    transition: all 0.3s;
+}
+
+a:hover:before {
+    transform: translateX(100%) rotate(45deg);
+}
+
